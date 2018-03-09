@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Meta tags for making website for mobile-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="initial-scale=1.25, user-scalable=no">
+
+  <meta charset="UTF-8">
+  <title>website-edit</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- STYLE sheet comes after all the libraries are loaded. Document style-->
+
+  <link href="../css/style.css" rel="stylesheet"/>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <!--backward mark -->
+        <p class="navbar-text pull-left">
+          <a href="website-ulst.html" class="navbar-link">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+        </p>
+
+        <!--heading on the nav bar-->
+        <p class="navbar-header pull-left">
+          <a class="navbar-brand thick" href="website-new.html">
+            <b>Websites</b>
+          </a>
+        </p>
+
+        <!--tick mark-->
+        <p class="navbar-text pull-right">
+          <a href="website-new.html" class="navbar-link">
+            <span class="glyphicon glyphicon-plus"></span>
+          </a>
+        </p>
+      </div>
+      <div class="col-xs-12 col-md-9">
+        <p class="navbar-text pull-left">
+          <a href="website-ulst.html" class="navbar-link">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+        </p>
+
+        <!--heading on the nav bar-->
+        <p class="navbar-header pull-left">
+          <a class="navbar-brand thick" href="website-new.html">
+            <b> New Website</b>
+          </a>
+        </p>
+
+        <!--tick mark-->
+        <p class="navbar-text pull-right">
+          <a href="website-ulst.html" class="navbar-link">
+            <span class="glyphicon glyphicon-ok"></span>
+          </a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--Sidebar content-->
+<div class="container-fluid" style="margin-top: 90px;">
+  <div class="row">
+    <nav class="col-lg-3">
+      <table class="table table-responsive no-border">
+        <tbody>
+        <tr>
+          <td><a href="#">Address Book App</a></td>
+          <td><a href="website-edit.html">
+            <span class="glyphicon glyphicon-cog"></span>
+          </a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Blogger</a></td>
+          <td><a href="website-edit.html">
+            <span class="glyphicon glyphicon-cog"></span>
+          </a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Blogging App</a></td>
+          <td><a href="website-edit.html">
+            <span class="glyphicon glyphicon-cog"></span>
+          </a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Script Testing App</a></td>
+          <td><a href="website-edit.html">
+            <span class="glyphicon glyphicon-cog"></span>
+          </a></td>
+        </tr>
+        </tbody>
+      </table>
+    </nav>
+    <div class="col-lg-9 visibe-phone">
+      <form>
+        <div class="form-group">
+          <label for="website-name">Website Name</label>
+          <input type="text" class="form-control" id="website-name" placeholder="Blogger">
+        </div>
+      </form>
+      <form>
+        <div class="form-group">
+          <label for="description">Website Description</label>
+          <textarea class="form-control" id="description" placeholder="Description"></textarea>
+        </div>
+      </form>
+      <a class="btn btn-danger btn-block "
+         href="login.html" >Delete</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a href="../user/profile.html">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+</body>
+</html>

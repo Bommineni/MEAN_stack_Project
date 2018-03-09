@@ -1,0 +1,79 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--tick mark blackspace-->
+    <p class="navbar-text pull-left">
+      <a routerLink="['../user/profile.html']" class="navbar-link">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+    </p>
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick" routerLink="['../page/page-ulst.html']">
+        <b>Pages</b>
+      </a>
+    </p>
+
+    <!--tick mark-->
+    <p class="navbar-text pull-right">
+      <a routerLink="['/page-new.html']" class="navbar-link">
+        <span class="glyphicon glyphicon-plus"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+<!--Content Part-->
+
+<div class="container" style="margin-top:90px;">
+  <table class="table table-responsive no-border">
+    <tbody>
+    <tr>
+      <td><a href="#">Blog Post</a></td>
+      <td><a routerLink="['/website-edit.html']">
+        <span class="glyphicon glyphicon-cog"></span>
+      </a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Blogs</a></td>
+      <td><a routerLink="['/website-edit.html']">
+        <span class="glyphicon glyphicon-cog"></span>
+      </a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Home</a></td>
+      <td><a routerLink="['/website-edit.html']">
+        <span class="glyphicon glyphicon-cog"></span>
+      </a></td>
+    </tr>
+    <tr>
+      <td><a href="#">About</a></td>
+      <td><a routerLink="['/website-edit.html']">
+        <span class="glyphicon glyphicon-cog"></span>
+      </a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Contact Us</a></td>
+      <td><a routerLink="['/website-edit.html']">
+        <span class="glyphicon glyphicon-cog"></span>
+      </a></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<!-- Footer -->
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a [routerLink]="['../user/profile']">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>

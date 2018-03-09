@@ -1,0 +1,85 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--tick mark blackspace-->
+    <p class="navbar-text pull-left">
+      <a [routerLink]="['/user',userId,'website',websitId,'page',pageId,'widget']" class="navbar-link">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+    </p>
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick" [routerLink]="['/user',userId,'website',websitId,'page']">
+        <b>Widget Edit</b>
+      </a>
+    </p>
+
+    <!--tick mark-->
+    <p class="navbar-text pull-right">
+      <a [routerLink]="['/user',userId,'website',websitId,'page',pageId,'widget']" class="navbar-link">
+        <span class="glyphicon glyphicon-ok"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+<!-- Content Part-->
+<div class="container" style="margin-top:85px;">
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="walice">
+    </div>
+  </form>
+
+  <form>
+    <div class="form-group">
+      <label for="text">Text</label>
+      <input type="text" class="form-control" id="text" placeholder="description">
+    </div>
+  </form>
+
+  <form>
+    <div class="form-group">
+      <label for="url">URL</label>
+      <input type="text" class="form-control" id="url" placeholder="https://i.kinja-img.com">
+    </div>
+  </form>
+  <form>
+    <div class="form-group">
+      <label for="width">Width</label>
+      <input type="text" class="form-control" id="width" placeholder="100%">
+    </div>
+  </form>
+  <form>
+    <div class="form-group">
+      <label for="upload">Upload</label>
+      <input type="text" class="form-control" id="upload" placeholder="choose file">
+    </div>
+  </form>
+  <form ngNoForm action="{{baseUrl}}/api/upload" method="post" enctype="multipart/form-data">
+    <input  name="myFile"   type="file" class="form-control"/>
+    <input  name="widgetId" value="{{widgetId}}"   style="display: none"/>
+    <input  name="websiteId" value="{{websiteId}}"   style="display: none"/>
+    <input  name="pageId" value="{{pageId}}"   style="display: none"/>
+    <input  name="userId" value="{{userId}}"   style="display: none"/>
+    <button type="submit" class="btn btn-block btn-primary">Upload Image</button>
+    <br/>
+  </form>
+  <a class="btn btn-danger btn-block "
+     [routerLink]="['/user',userId,'website',websitId,'page',pageId,'widget']">Delete</a>
+</div>
+
+<!-- Footer -->
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a [routerLink]="['/user',userId]">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>

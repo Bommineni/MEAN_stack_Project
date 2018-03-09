@@ -1,0 +1,54 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--tick mark blackspace-->
+    <p class="navbar-text pull-left">
+      <a [routerLink]="['/user',userId,'website',websiteId,'page',pageId,'widget']" class="navbar-link">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+    </p>
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick" [routerLink]="['/user',userId,'website',websiteId,'page']">
+        <b>Widget Edit</b>
+      </a>
+    </p>
+
+    <!--tick mark-->
+    <p class="navbar-text pull-right">
+      <a [routerLink]="['/user',userId,'website',websiteId,'page',pageId,'widget']" class="navbar-link">
+        <span class="glyphicon glyphicon-ok"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="walice">
+    </div>
+  </form>
+
+  <form>
+    <div class="form-group">
+      <quill-editor [(ngModel)]="widget.text" name="text" placeholder="insert here.."></quill-editor>
+    </div>
+  </form>
+</div>
+<a class="btn btn-danger btn-block ">Delete</a>
+<!-- Footer -->
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a [routerLink]="['/user',userId]">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>

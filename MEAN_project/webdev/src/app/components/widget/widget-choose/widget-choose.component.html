@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+
+    <!--Left arrow-->
+
+    <p class="navbar-text pull-left">
+      <a routerLink="['/widget-ulst.html']" class="navbar-link">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+    </p>
+
+    <!--heading on the nav bar-->
+    <p class="navbar-header pull-left">
+      <a class="navbar-brand thick" routerLink="['/widget-choose.html']">
+        <b>Choose Widget</b>
+      </a>
+    </p>
+
+  </div>
+</nav>
+
+<div class="container" style="margin-top:90px;">
+  <a href="/widget-heading.html">Header</a>
+  <a routerLink="['#']">Label</a>
+  <a routerLink="['#']">HTML</a>
+  <a routerLink="['#']">Text Input</a>
+  <a routerLink="['#']">Link</a>
+  <a routerLink="['#']">Button</a>
+  <a routerLink="['/widget-image.html']">Image</a>
+  <a routerLink="['/widget-youtube.html']">YouTube</a>
+  <a routerLink="['#']">Data Table</a>
+  <a routerLink="['#']">Repeater</a>
+
+</div>
+
+<!--Footer-->
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text pull-right">
+      <a [routerLink]="['/user',userId]">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </p>
+
+  </div>
+</nav>
